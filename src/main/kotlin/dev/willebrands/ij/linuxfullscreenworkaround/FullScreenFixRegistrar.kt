@@ -2,11 +2,11 @@ package dev.willebrands.ij.linuxfullscreenworkaround
 
 import com.intellij.openapi.diagnostic.logger
 import com.intellij.openapi.project.Project
-import com.intellij.openapi.startup.StartupActivity
+import com.intellij.openapi.startup.ProjectActivity
 import com.intellij.openapi.wm.ex.WindowManagerEx
 
 @Suppress("UnstableApiUsage")
-class FullScreenFixRegistrar : StartupActivity {
+class FullScreenFixRegistrar : ProjectActivity {
     private fun hookupFrameHelper(project: Project) {
         log.info("Hooking FrameHelper for IdeFrame of project ${project.name}")
         val frame = WindowManagerEx.getInstanceEx().getFrame(project)
@@ -21,7 +21,7 @@ class FullScreenFixRegistrar : StartupActivity {
         val log = logger<FullScreenFixRegistrar>()
     }
 
-    override fun runActivity(project: Project) {
+    override suspend fun execute(project: Project) {
         hookupFrameHelper(project)
     }
 }
