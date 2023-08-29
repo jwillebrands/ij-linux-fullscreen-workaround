@@ -12,7 +12,7 @@ class FullScreenFixRegistrar : StartupActivity {
         val frame = WindowManagerEx.getInstanceEx().getFrame(project)
         frame?.apply {
             frameHelper?.let {
-                setFrameHelper(FullScreenSyncWorkaroundFrameHelper(it))
+                setFrameHelper(FullScreenSyncWorkaroundFrameHelper(frame, it))
             }
         }
     }
