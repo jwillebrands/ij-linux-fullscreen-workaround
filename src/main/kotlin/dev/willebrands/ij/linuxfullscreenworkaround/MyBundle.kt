@@ -1,4 +1,4 @@
-package com.github.jwillebrands.ijlinuxfullscreenworkaround
+package dev.willebrands.ij.linuxfullscreenworkaround
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

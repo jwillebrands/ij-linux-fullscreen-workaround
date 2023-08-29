@@ -1,18 +1,18 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.jwillebrands.ijlinuxfullscreenworkaround</id>
-    <name>ij-linux-fullscreen-workaround Template</name>
-    <vendor>jwillebrands</vendor>
+    <id>dev.willebrands.ij.linuxfullscreenworkaround</id>
+    <name>Linux Fullscreen Workaround</name>
+    <vendor>Jan-Willem Willebrands</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.jwillebrands.ijlinuxfullscreenworkaround.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <toolWindow factoryClass="dev.willebrands.ij.linuxfullscreenworkaround.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.jwillebrands.ijlinuxfullscreenworkaround.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+        <listener class="dev.willebrands.ij.linuxfullscreenworkaround.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
 </idea-plugin>

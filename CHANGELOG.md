@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# ij-linux-fullscreen-workaround Changelog
+# Linux Fullscreen Workaround Changelog
 
 ## [Unreleased]
 ### Added

@@ -1,9 +1,9 @@
-package com.github.jwillebrands.ijlinuxfullscreenworkaround.services
+package dev.willebrands.ij.linuxfullscreenworkaround.services
 
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.project.Project
-import com.github.jwillebrands.ijlinuxfullscreenworkaround.MyBundle
+import dev.willebrands.ij.linuxfullscreenworkaround.MyBundle
 
 @Service(Service.Level.PROJECT)
 class MyProjectService(project: Project) {

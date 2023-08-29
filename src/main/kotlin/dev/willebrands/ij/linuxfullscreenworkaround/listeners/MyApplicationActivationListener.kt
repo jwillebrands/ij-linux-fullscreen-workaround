@@ -1,4 +1,4 @@
-package com.github.jwillebrands.ijlinuxfullscreenworkaround.listeners
+package dev.willebrands.ij.linuxfullscreenworkaround.listeners
 
 import com.intellij.openapi.application.ApplicationActivationListener
 import com.intellij.openapi.diagnostic.thisLogger

@@ -1,4 +1,4 @@
-package com.github.jwillebrands.ijlinuxfullscreenworkaround
+package dev.willebrands.ij.linuxfullscreenworkaround
 
 import com.intellij.ide.highlighter.XmlFileType
 import com.intellij.openapi.components.service
@@ -6,7 +6,7 @@ import com.intellij.psi.xml.XmlFile
 import com.intellij.testFramework.TestDataPath
 import com.intellij.testFramework.fixtures.BasePlatformTestCase
 import com.intellij.util.PsiErrorElementUtil
-import com.github.jwillebrands.ijlinuxfullscreenworkaround.services.MyProjectService
+import dev.willebrands.ij.linuxfullscreenworkaround.services.MyProjectService
 
 @TestDataPath("\$CONTENT_ROOT/src/test/testData")
 class MyPluginTest : BasePlatformTestCase() {

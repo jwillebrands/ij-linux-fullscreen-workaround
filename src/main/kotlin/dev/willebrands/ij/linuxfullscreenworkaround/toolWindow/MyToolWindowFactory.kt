@@ -1,4 +1,4 @@
-package com.github.jwillebrands.ijlinuxfullscreenworkaround.toolWindow
+package dev.willebrands.ij.linuxfullscreenworkaround.toolWindow
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.diagnostic.thisLogger
@@ -8,8 +8,8 @@ import com.intellij.openapi.wm.ToolWindowFactory
 import com.intellij.ui.components.JBLabel
 import com.intellij.ui.components.JBPanel
 import com.intellij.ui.content.ContentFactory
-import com.github.jwillebrands.ijlinuxfullscreenworkaround.MyBundle
-import com.github.jwillebrands.ijlinuxfullscreenworkaround.services.MyProjectService
+import dev.willebrands.ij.linuxfullscreenworkaround.MyBundle
+import dev.willebrands.ij.linuxfullscreenworkaround.services.MyProjectService
 import javax.swing.JButton
 
 
